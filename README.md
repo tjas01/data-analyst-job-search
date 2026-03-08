@@ -1,3 +1,5 @@
+#-- UNDER CONSTRUCTION --
+
 # Data Analyst Job Search Aggregator
 
 A fully automated, free job feed aggregator built specifically for **Data Analysts** — not data scientists, not engineers. This tool pulls job postings daily from 8 different sources, deduplicates them, filters by relevant titles, and delivers a clean digest to your inbox every morning.
