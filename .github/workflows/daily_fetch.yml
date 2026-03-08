@@ -1,0 +1,46 @@
+name: Daily Job Feed
+
+on:
+  schedule:
+    # Runs daily at 7:00 AM Vancouver time (15:00 UTC)
+    - cron: "0 15 * * *"
+  workflow_dispatch:  # Allow manual trigger from GitHub UI
+
+jobs:
+  fetch-and-email:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write  # Needed to commit updated data files
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: |
+          pip install feedparser requests
+
+      - name: Fetch jobs from all sources
+        run: python scripts/fetch_jobs.py
+
+      - name: Send email digest
+        env:
+          SMTP_HOST: smtp.gmail.com
+          SMTP_PORT: "587"
+          SMTP_USER: ${{ secrets.SMTP_USER }}
+          SMTP_PASS: ${{ secrets.SMTP_PASS }}
+        run: python scripts/send_email.py
+
+      - name: Commit updated data files
+        run: |
+          git config user.name "job-feed-bot"
+          git config user.email "actions@github.com"
+          git add data/
+          git diff --cached --quiet || git commit -m "chore: update job feed $(date -u +%Y-%m-%d)"
+          git push
