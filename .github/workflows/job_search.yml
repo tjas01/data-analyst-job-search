@@ -1,0 +1,40 @@
+name: Daily Job Search
+
+on:
+  schedule:
+    # 8:00 AM PST = 16:00 UTC (UTC-8 in winter / UTC-7 in summer)
+    # Running at 16:00 UTC covers 8am PST year-round
+    - cron: "0 16 * * *"
+  workflow_dispatch:  # Allow manual trigger from GitHub UI
+
+jobs:
+  job-search:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write  # Needed to commit JOBS.md and jobs_history.json
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install feedparser requests google-generativeai tzdata
+
+      - name: Run job search and score
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: python scripts/fetch_jobs.py
+
+      - name: Commit updated files
+        run: |
+          git config user.name "job-search-bot"
+          git config user.email "actions@github.com"
+          git add JOBS.md data/jobs_history.json
+          git diff --cached --quiet || git commit -m "chore: job search update $(date -u +%Y-%m-%d)"
+          git push
