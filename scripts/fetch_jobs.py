@@ -343,7 +343,7 @@ def fetch_greenhouse() -> list:
                     "location": location or "Canada",
                     "url": link,
                     "source": "Greenhouse",
-                    "published": job.get("updated_at", ""),
+                    "published": "",  # updated_at is unreliable; treat as undated so active jobs always pass the recency filter
                     "description": clean_html(job.get("content", "")),
                     "contract_type": "Unknown",
                 })
@@ -403,7 +403,7 @@ def fetch_lever() -> list:
                     "location": location or commitment or "Remote/Canada",
                     "url": link,
                     "source": "Lever",
-                    "published": published,
+                    "published": "",  # createdAt is original post date but old open roles should still surface; use history for dedup
                     "description": clean_html(
                         job.get("descriptionPlain", "") or job.get("description", "")
                     ),
@@ -460,7 +460,7 @@ def fetch_ashby() -> list:
                     "location": ("Remote" if is_remote else location) or "Remote",
                     "url": link,
                     "source": "Ashby",
-                    "published": job.get("publishedAt", ""),
+                    "published": "",  # treat as undated so active open roles always pass the recency filter
                     "description": clean_html(
                         job.get("descriptionPlain", "") or job.get("descriptionHtml", "")
                     ),
@@ -688,9 +688,8 @@ def score_job(job: dict):
         print("[Gemini] GEMINI_API_KEY not set -- skipping scoring")
         return (5, "Scoring unavailable: no API key.")
     try:
-        import google.generativeai as genai
-        genai.configure(api_key=api_key)
-        model = genai.GenerativeModel("gemini-1.5-flash")
+        from google import genai
+        client = genai.Client(api_key=api_key)
         prompt = SCORE_PROMPT.format(
             profile=CANDIDATE_PROFILE.strip(),
             title=job.get("title", ""),
@@ -698,7 +697,10 @@ def score_job(job: dict):
             location=job.get("location", ""),
             description=job.get("description", "")[:400],
         )
-        response = model.generate_content(prompt)
+        response = client.models.generate_content(
+            model="gemini-1.5-flash",
+            contents=prompt,
+        )
         text = response.text or ""
         score_match = re.search(r"score:\s*(\d+)", text, re.IGNORECASE)
         reason_match = re.search(r"reason:\s*(.+)", text, re.IGNORECASE | re.DOTALL)
@@ -709,7 +711,7 @@ def score_job(job: dict):
         return (score, reason)
     except Exception as e:
         print("[Gemini] Error scoring '{}': {}".format(job.get("title", ""), e))
-        return (5, "Scoring error.")
+        return (5, "Scoring error: {}".format(e))
 
 
 # ------------------------------------------------------------------
@@ -749,6 +751,69 @@ def write_jobs_md(top_jobs: list):
     with open(JOBS_MD, "w", encoding="utf-8") as f:
         f.write("\n".join(lines))
     print("[JOBS.md] Written with {} jobs".format(len(top_jobs)))
+
+
+# ------------------------------------------------------------------
+# README.MD JOBS SECTION
+# ------------------------------------------------------------------
+
+README_FILE = REPO_ROOT / "README.md"
+JOBS_MARKER_START = "<!-- JOBS_START -->"
+JOBS_MARKER_END = "<!-- JOBS_END -->"
+
+
+def write_readme_section(top_jobs: list):
+    """Replace the jobs section in README.md between marker comments."""
+    if not README_FILE.exists():
+        return
+    with open(README_FILE, "r", encoding="utf-8") as f:
+        content = f.read()
+    if JOBS_MARKER_START not in content or JOBS_MARKER_END not in content:
+        return
+
+    try:
+        from zoneinfo import ZoneInfo
+        pst = ZoneInfo("America/Vancouver")
+        now_pst = datetime.now(pst)
+        timestamp = now_pst.strftime("%Y-%m-%d %I:%M %p PST")
+    except Exception:
+        timestamp = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
+
+    lines = ["", "*Last updated: {}*".format(timestamp), ""]
+
+    if not top_jobs:
+        lines.append("*No matching jobs found in the last 48 hours.*")
+        lines.append("")
+    else:
+        for i, job in enumerate(top_jobs, 1):
+            title = job.get("title", "Unknown")
+            company = job.get("company", "Unknown")
+            location = job.get("location", "Unknown")
+            contract_type = job.get("contract_type", "Unknown")
+            posted = (job.get("published", "") or "")[:10] or "Unknown"
+            url = job.get("url", "")
+            source = job.get("source", "Unknown")
+            score = job.get("score", "?")
+            reason = job.get("reason", "")
+            link_str = url if url else "Apply via {}".format(source)
+
+            lines.append("**{}. {} | {} | {} | {}**".format(i, title, company, location, contract_type))
+            lines.append("- Posted: {}".format(posted))
+            lines.append("- Link: {}".format(link_str))
+            lines.append("- Match score: {}/10".format(score))
+            lines.append("- Why this fits: {}".format(reason))
+            lines.append("")
+
+    new_section = "{}\n{}\n{}".format(JOBS_MARKER_START, "\n".join(lines), JOBS_MARKER_END)
+    updated = re.sub(
+        r"{}.*?{}".format(re.escape(JOBS_MARKER_START), re.escape(JOBS_MARKER_END)),
+        new_section,
+        content,
+        flags=re.DOTALL,
+    )
+    with open(README_FILE, "w", encoding="utf-8") as f:
+        f.write(updated)
+    print("[README.md] Jobs section updated")
 
 
 # ------------------------------------------------------------------
@@ -813,8 +878,9 @@ def main():
         }
     save_history(history)
 
-    # Write JOBS.md
+    # Write JOBS.md and update README.md jobs section
     write_jobs_md(top_jobs)
+    write_readme_section(top_jobs)
     print("\nDone.")
 
 
