@@ -1,8 +1,10 @@
 # -*- coding: utf-8 -*-
 """
 Job Feed Aggregator - Tejas Vyasam
-Fetches BC/remote analyst jobs from 9 sources, scores against profile
-using Gemini AI, and writes top 5 matches to JOBS.md.
+Fetches BC analyst jobs from 9 sources, scores against profile using
+Python keyword scoring + Gemini AI, and writes top 10 matches:
+  - Section 1: top 5 jobs with timestamps (posted in last 24h)
+  - Section 2: top 5 jobs without timestamps (ATS open roles)
 
 Sources:
   1. Canada Job Bank (RSS)         - Government/verified CA jobs
@@ -16,7 +18,7 @@ Sources:
   9. BC Public Service (Workday)   - BC government jobs
 
 Outputs:
-  - JOBS.md                  (top 5 AI-scored matches, repo root)
+  - JOBS.md                  (top 10 scored matches, repo root)
   - data/jobs_history.json   (rolling 25-day log)
 """
 
@@ -107,6 +109,41 @@ def make_id(url: str) -> str:
 
 def clean_html(raw: str) -> str:
     return re.sub(r"<[^>]+>", "", raw or "").strip()[:500]
+
+
+# ------------------------------------------------------------------
+# BC LOCATION FILTER
+# ------------------------------------------------------------------
+
+_BC_KEEP = re.compile(
+    r"british columbia|vancouver|surrey|burnaby|richmond|coquitlam|langley|"
+    r"abbotsford|kelowna|victoria|nanaimo|delta|new westminster|port moody|"
+    r"maple ridge|north vancouver|west vancouver|white rock|chilliwack|kamloops|"
+    r"remote|canada|anywhere|worldwide",
+    re.IGNORECASE,
+)
+_NON_BC = re.compile(
+    r"ontario|alberta|quebec|manitoba|saskatchewan|nova scotia|new brunswick|"
+    r"newfoundland|prince edward|yukon|nunavut|northwest territories|"
+    r"toronto|ottawa|montreal|calgary|edmonton|winnipeg|"
+    r"united states|\busa?\b|new york|california|texas|washington,? d|"
+    r"seattle|san francisco|los angeles|chicago|boston|austin|denver|"
+    r"europe|germany|united kingdom|\buk\b|australia|india|asia",
+    re.IGNORECASE,
+)
+
+
+def is_bc_eligible(location: str) -> bool:
+    loc = location.strip()
+    if not loc or loc.lower() in ("unknown", ""):
+        return True  # no location info -- pass through, let Gemini decide
+    if re.search(r"\bbc\b", loc, re.IGNORECASE):
+        return True
+    if _BC_KEEP.search(loc):
+        return True
+    if _NON_BC.search(loc):
+        return False
+    return True  # unrecognised location -- pass through
 
 
 def parse_date(pub: str):
@@ -609,16 +646,19 @@ def fetch_bc_public_service() -> list:
 # DATE FILTERING
 # ------------------------------------------------------------------
 
-def filter_recent(jobs: list, hours: int = 48) -> list:
+def filter_recent(jobs: list, hours: int = 24) -> list:
     cutoff = datetime.now(timezone.utc) - timedelta(hours=hours)
     recent = []
     undated = []
     for job in jobs:
         dt = parse_date(job.get("published", ""))
         if dt is None:
+            job["_dated"] = False
             undated.append(job)
         elif dt >= cutoff:
+            job["_dated"] = True
             recent.append(job)
+        # jobs with parseable dates older than cutoff are dropped entirely
     print("  Dated+recent: {}, Undated (pass-through): {}".format(len(recent), len(undated)))
     return recent + undated
 
@@ -656,6 +696,57 @@ def save_history(history: dict) -> dict:
 
 
 # ------------------------------------------------------------------
+# PYTHON KEYWORD SCORER (baseline / Gemini fallback)
+# ------------------------------------------------------------------
+
+def python_score(job: dict) -> int:
+    title = job.get("title", "").lower()
+    desc = job.get("description", "").lower()
+    loc = job.get("location", "").lower()
+    score = 4  # neutral baseline
+
+    # --- Title signals ---
+    if any(k in title for k in ["business systems analyst", "bsa"]):
+        score += 4
+    elif any(k in title for k in ["erp analyst", "sap analyst"]):
+        score += 3
+    elif any(k in title for k in ["business analyst", "business intelligence"]):
+        score += 2
+    elif any(k in title for k in ["supply chain analyst", "reporting analyst", "data analyst"]):
+        score += 2
+    elif any(k in title for k in ["operations analyst", "analytics engineer", "bi analyst"]):
+        score += 1
+
+    # --- Description signals (strong match) ---
+    if any(k in desc for k in ["sap", "s/4hana", "s4hana", "erp"]):
+        score += 2
+    if any(k in desc for k in ["power bi", "powerbi"]):
+        score += 1
+    if "sql" in desc:
+        score += 1
+    if any(k in desc for k in ["requirements gathering", "process mapping", "stakeholder"]):
+        score += 1
+    if any(k in desc for k in ["supply chain", "logistics", "manufacturing", "procurement"]):
+        score += 1
+
+    # --- Location bonus ---
+    if any(k in loc for k in ["vancouver", "surrey", "burnaby", "british columbia", " bc"]):
+        score += 1
+    elif re.search(r"\bbc\b", loc, re.IGNORECASE):
+        score += 1
+
+    # --- Penalties ---
+    if any(k in title for k in ["data scientist", "machine learning", "ml engineer", "software engineer", "developer"]):
+        score -= 3
+    if any(k in desc for k in ["security clearance", "citizenship required", "citizens only"]):
+        score -= 4
+    if any(k in desc for k in ["10+ years", "15+ years", "20+ years"]):
+        score -= 2
+
+    return max(0, min(10, score))
+
+
+# ------------------------------------------------------------------
 # GEMINI SCORING
 # ------------------------------------------------------------------
 
@@ -689,10 +780,12 @@ GEMINI_API_URL = (
 
 
 def score_job(job: dict):
+    """Score a job using Gemini AI. Falls back to Python keyword scorer on any failure."""
+    py_score = python_score(job)
     api_key = os.environ.get("GEMINI_API_KEY", "")
     if not api_key:
-        print("[Gemini] GEMINI_API_KEY not set -- skipping scoring")
-        return (5, "Scoring unavailable: no API key.")
+        print("[Score] No API key -- using Python score ({}/10)".format(py_score))
+        return (py_score, _python_reason(job, py_score))
     try:
         prompt = SCORE_PROMPT.format(
             profile=CANDIDATE_PROFILE.strip(),
@@ -712,32 +805,53 @@ def score_job(job: dict):
         text = r.json()["candidates"][0]["content"]["parts"][0]["text"]
         score_match = re.search(r"score:\s*(\d+)", text, re.IGNORECASE)
         reason_match = re.search(r"reason:\s*(.+)", text, re.IGNORECASE | re.DOTALL)
-        score = int(score_match.group(1)) if score_match else 5
+        if not score_match:
+            raise ValueError("No score found in response: {}".format(text[:200]))
+        score = int(score_match.group(1))
         score = min(max(score, 0), 10)
         reason = reason_match.group(1).strip() if reason_match else text.strip()[:400]
         reason = re.sub(r"\s+", " ", reason)
         return (score, reason)
     except Exception as e:
-        print("[Gemini] Error scoring '{}': {}".format(job.get("title", ""), e))
-        return (5, "Scoring error: {}".format(e))
+        print("[Gemini] Error for '{}': {} -- falling back to Python score ({}/10)".format(
+            job.get("title", ""), e, py_score))
+        return (py_score, _python_reason(job, py_score))
+
+
+def _python_reason(job: dict, score: int) -> str:
+    """Generate a brief human-readable reason from the Python scorer signals."""
+    title = job.get("title", "").lower()
+    desc = job.get("description", "").lower()
+    signals = []
+    if any(k in title for k in ["business systems analyst", "bsa"]):
+        signals.append("title is a top-priority BSA role")
+    elif any(k in title for k in ["business analyst", "erp", "sap"]):
+        signals.append("title aligns with BA/ERP target roles")
+    elif any(k in title for k in ["supply chain", "reporting", "data analyst"]):
+        signals.append("title matches target analyst roles")
+    if any(k in desc for k in ["sap", "s/4hana", "erp"]):
+        signals.append("SAP/ERP mentioned in description")
+    if any(k in desc for k in ["power bi", "powerbi"]):
+        signals.append("Power BI mentioned")
+    if any(k in desc for k in ["supply chain", "logistics"]):
+        signals.append("supply chain domain")
+    if any(k in desc for k in ["requirements gathering", "stakeholder"]):
+        signals.append("requirements/stakeholder work mentioned")
+    if not signals:
+        signals.append("partial keyword match on title")
+    label = "Strong" if score >= 7 else ("Moderate" if score >= 5 else "Weak")
+    return "{} keyword match (Python scorer, Gemini unavailable). Signals: {}.".format(
+        label, "; ".join(signals)
+    )
 
 
 # ------------------------------------------------------------------
 # JOBS.MD OUTPUT
 # ------------------------------------------------------------------
 
-def write_jobs_md(top_jobs: list):
-    try:
-        from zoneinfo import ZoneInfo
-        pst = ZoneInfo("America/Vancouver")
-        now_pst = datetime.now(pst)
-        timestamp = now_pst.strftime("%Y-%m-%d %I:%M %p PST")
-    except Exception:
-        timestamp = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
-
-    lines = ["# Job Matches \u2014 Last updated: {}".format(timestamp), ""]
-
-    for i, job in enumerate(top_jobs, 1):
+def _job_lines(jobs: list, start_rank: int = 1) -> list:
+    lines = []
+    for i, job in enumerate(jobs, start_rank):
         title = job.get("title", "Unknown")
         company = job.get("company", "Unknown")
         location = job.get("location", "Unknown")
@@ -748,17 +862,46 @@ def write_jobs_md(top_jobs: list):
         score = job.get("score", "?")
         reason = job.get("reason", "")
         link_str = url if url else "Apply via {}".format(source)
-
         lines.append("**{}. {} | {} | {} | {}**".format(i, title, company, location, contract_type))
         lines.append("- Posted: {}".format(posted))
         lines.append("- Link: {}".format(link_str))
         lines.append("- Match score: {}/10".format(score))
         lines.append("- Why this fits: {}".format(reason))
         lines.append("")
+    return lines
+
+
+def _get_timestamp() -> str:
+    try:
+        from zoneinfo import ZoneInfo
+        return datetime.now(ZoneInfo("America/Vancouver")).strftime("%Y-%m-%d %I:%M %p PST")
+    except Exception:
+        return datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
+
+
+def write_jobs_md(dated: list, undated: list):
+    timestamp = _get_timestamp()
+    lines = ["# Job Matches \u2014 Last updated: {}".format(timestamp), ""]
+
+    lines.append("## Postings from the last 24 hours")
+    lines.append("")
+    if dated:
+        lines += _job_lines(dated, start_rank=1)
+    else:
+        lines.append("*No new dated postings in the last 24 hours.*")
+        lines.append("")
+
+    lines.append("## Open roles (no timestamp available)")
+    lines.append("")
+    if undated:
+        lines += _job_lines(undated, start_rank=1)
+    else:
+        lines.append("*No undated roles found.*")
+        lines.append("")
 
     with open(JOBS_MD, "w", encoding="utf-8") as f:
         f.write("\n".join(lines))
-    print("[JOBS.md] Written with {} jobs".format(len(top_jobs)))
+    print("[JOBS.md] Written: {} dated, {} undated".format(len(dated), len(undated)))
 
 
 # ------------------------------------------------------------------
@@ -770,7 +913,7 @@ JOBS_MARKER_START = "<!-- JOBS_START -->"
 JOBS_MARKER_END = "<!-- JOBS_END -->"
 
 
-def write_readme_section(top_jobs: list):
+def write_readme_section(dated: list, undated: list):
     """Replace the jobs section in README.md between marker comments."""
     if not README_FILE.exists():
         return
@@ -779,38 +922,24 @@ def write_readme_section(top_jobs: list):
     if JOBS_MARKER_START not in content or JOBS_MARKER_END not in content:
         return
 
-    try:
-        from zoneinfo import ZoneInfo
-        pst = ZoneInfo("America/Vancouver")
-        now_pst = datetime.now(pst)
-        timestamp = now_pst.strftime("%Y-%m-%d %I:%M %p PST")
-    except Exception:
-        timestamp = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
-
+    timestamp = _get_timestamp()
     lines = ["", "*Last updated: {}*".format(timestamp), ""]
 
-    if not top_jobs:
-        lines.append("*No matching jobs found in the last 48 hours.*")
-        lines.append("")
+    lines.append("### Postings from the last 24 hours")
+    lines.append("")
+    if dated:
+        lines += _job_lines(dated, start_rank=1)
     else:
-        for i, job in enumerate(top_jobs, 1):
-            title = job.get("title", "Unknown")
-            company = job.get("company", "Unknown")
-            location = job.get("location", "Unknown")
-            contract_type = job.get("contract_type", "Unknown")
-            posted = (job.get("published", "") or "")[:10] or "Unknown"
-            url = job.get("url", "")
-            source = job.get("source", "Unknown")
-            score = job.get("score", "?")
-            reason = job.get("reason", "")
-            link_str = url if url else "Apply via {}".format(source)
+        lines.append("*No new dated postings in the last 24 hours.*")
+        lines.append("")
 
-            lines.append("**{}. {} | {} | {} | {}**".format(i, title, company, location, contract_type))
-            lines.append("- Posted: {}".format(posted))
-            lines.append("- Link: {}".format(link_str))
-            lines.append("- Match score: {}/10".format(score))
-            lines.append("- Why this fits: {}".format(reason))
-            lines.append("")
+    lines.append("### Open roles (no timestamp available)")
+    lines.append("")
+    if undated:
+        lines += _job_lines(undated, start_rank=1)
+    else:
+        lines.append("*No undated roles found.*")
+        lines.append("")
 
     new_section = "{}\n{}\n{}".format(JOBS_MARKER_START, "\n".join(lines), JOBS_MARKER_END)
     updated = re.sub(
@@ -821,7 +950,7 @@ def write_readme_section(top_jobs: list):
     )
     with open(README_FILE, "w", encoding="utf-8") as f:
         f.write(updated)
-    print("[README.md] Jobs section updated")
+    print("[README.md] Jobs section updated: {} dated, {} undated".format(len(dated), len(undated)))
 
 
 # ------------------------------------------------------------------
@@ -846,11 +975,15 @@ def main():
 
     print("\nTotal fetched: {}".format(len(all_jobs)))
 
-    # Filter to last 48 hours (undated jobs pass through)
-    recent = filter_recent(all_jobs, hours=RECENCY_HOURS)
+    # BC-only filter
+    bc_jobs = [j for j in all_jobs if is_bc_eligible(j.get("location", ""))]
+    print("After BC filter: {} (dropped {})".format(len(bc_jobs), len(all_jobs) - len(bc_jobs)))
+
+    # Filter to last 24h; tags each job with _dated=True/False
+    recent = filter_recent(bc_jobs, hours=RECENCY_HOURS)
     print("After {}h filter: {}".format(RECENCY_HOURS, len(recent)))
 
-    # Load history, skip already-seen jobs
+    # Skip already-seen jobs
     history = load_history()
     new_jobs = [j for j in recent if j["id"] not in history]
     print("New jobs (not in history): {}".format(len(new_jobs)))
@@ -859,20 +992,24 @@ def main():
         print("No new jobs to score. JOBS.md not updated.")
         return
 
-    # Score with Gemini
-    print("\nScoring {} jobs with Gemini...".format(len(new_jobs)))
+    # Score each job (Gemini with Python fallback)
+    print("\nScoring {} jobs...".format(len(new_jobs)))
     for job in new_jobs:
         score, reason = score_job(job)
         job["score"] = score
         job["reason"] = reason
         print("  [{}/10] {} @ {}".format(score, job["title"], job.get("company", "")))
 
-    # Remove hard excludes (score 0), sort descending, take top 5
-    scored = [j for j in new_jobs if j.get("score", 0) > 0]
-    scored.sort(key=lambda j: j.get("score", 0), reverse=True)
-    top_jobs = scored[:TOP_N]
+    # Split into dated and undated, drop score-0 hard excludes, top 5 each
+    def top5(jobs):
+        kept = [j for j in jobs if j.get("score", 0) > 0]
+        kept.sort(key=lambda j: j.get("score", 0), reverse=True)
+        return kept[:TOP_N]
 
-    print("\nTop {} jobs selected".format(len(top_jobs)))
+    top_dated = top5([j for j in new_jobs if j.get("_dated")])
+    top_undated = top5([j for j in new_jobs if not j.get("_dated")])
+
+    print("\nSelected: {} dated, {} undated".format(len(top_dated), len(top_undated)))
 
     # Update history with all scored jobs
     now_iso = datetime.now(timezone.utc).isoformat()
@@ -883,12 +1020,13 @@ def main():
             "url": job.get("url", ""),
             "date_seen": now_iso,
             "score": job.get("score", 0),
+            "dated": job.get("_dated", False),
         }
     save_history(history)
 
     # Write JOBS.md and update README.md jobs section
-    write_jobs_md(top_jobs)
-    write_readme_section(top_jobs)
+    write_jobs_md(top_dated, top_undated)
+    write_readme_section(top_dated, top_undated)
     print("\nDone.")
 
 

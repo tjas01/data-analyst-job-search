@@ -6,7 +6,7 @@ Built for: Business Analyst, Business Systems Analyst, Data Analyst, SAP/ERP Ana
 
 ---
 
-## Top 5 Job Matches
+## Top 10 Job Matches
 
 <!-- JOBS_START -->
 
@@ -65,7 +65,7 @@ fetch_jobs.py
         +-- BC Public Service (Workday API)
         |
         v
-  Filter: last 48 hours (ATS sources pass through — they only serve open roles)
+  Filter: last 24 hours (ATS sources pass through — they only serve open roles)
         |
         v
   Skip jobs already in data/jobs_history.json
@@ -74,7 +74,13 @@ fetch_jobs.py
   Score each new job with Gemini 1.5 Flash (0–10 + reason)
         |
         v
-  Drop hard excludes (score 0), take top 5
+  BC location filter — drop non-BC roles
+        |
+        v
+  Score with Python keywords + Gemini AI (Python used as fallback)
+        |
+        v
+  Drop hard excludes (score 0), take top 5 dated + top 5 undated
         |
         v
   Write JOBS.md + update this README + commit back to repo
