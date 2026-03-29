@@ -2,9 +2,9 @@ name: Daily Job Search
 
 on:
   schedule:
-    # 8:00 AM PST = 16:00 UTC (UTC-8 in winter / UTC-7 in summer)
-    # Running at 16:00 UTC covers 8am PST year-round
-    - cron: "0 16 * * *"
+    # 7:00 AM PST = 15:00 UTC (UTC-8 in winter / UTC-7 in summer)
+    # Running at 15:00 UTC covers 7am PST year-round
+    - cron: "0 15 * * *"
   workflow_dispatch:  # Allow manual trigger from GitHub UI
 
 jobs:
@@ -24,7 +24,7 @@ jobs:
           python-version: "3.11"
 
       - name: Install dependencies
-        run: pip install feedparser requests google-generativeai tzdata
+        run: pip install feedparser requests tzdata
 
       - name: Run job search and score
         env:

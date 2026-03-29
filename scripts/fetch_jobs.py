@@ -37,7 +37,7 @@ HISTORY_FILE = DATA_DIR / "jobs_history.json"
 JOBS_MD = REPO_ROOT / "JOBS.md"
 
 HISTORY_MAX_DAYS = 25
-RECENCY_HOURS = 48
+RECENCY_HOURS = 24
 TOP_N = 5
 
 TITLE_KEYWORDS = [
@@ -682,14 +682,18 @@ reason: 2-3 sentences explaining specifically why this role fits or does not fit
 """
 
 
+GEMINI_API_URL = (
+    "https://generativelanguage.googleapis.com/v1beta/models/"
+    "gemini-1.5-flash:generateContent"
+)
+
+
 def score_job(job: dict):
     api_key = os.environ.get("GEMINI_API_KEY", "")
     if not api_key:
         print("[Gemini] GEMINI_API_KEY not set -- skipping scoring")
         return (5, "Scoring unavailable: no API key.")
     try:
-        from google import genai
-        client = genai.Client(api_key=api_key)
         prompt = SCORE_PROMPT.format(
             profile=CANDIDATE_PROFILE.strip(),
             title=job.get("title", ""),
@@ -697,11 +701,15 @@ def score_job(job: dict):
             location=job.get("location", ""),
             description=job.get("description", "")[:400],
         )
-        response = client.models.generate_content(
-            model="gemini-1.5-flash",
-            contents=prompt,
+        payload = {"contents": [{"parts": [{"text": prompt}]}]}
+        r = requests.post(
+            GEMINI_API_URL,
+            json=payload,
+            params={"key": api_key},
+            timeout=30,
         )
-        text = response.text or ""
+        r.raise_for_status()
+        text = r.json()["candidates"][0]["content"]["parts"][0]["text"]
         score_match = re.search(r"score:\s*(\d+)", text, re.IGNORECASE)
         reason_match = re.search(r"reason:\s*(.+)", text, re.IGNORECASE | re.DOTALL)
         score = int(score_match.group(1)) if score_match else 5

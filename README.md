@@ -49,7 +49,7 @@ Built for: Business Analyst, Business Systems Analyst, Data Analyst, SAP/ERP Ana
 ## How It Works
 
 ```
-GitHub Actions (8 AM PST daily)
+GitHub Actions (7 AM PST daily)
         |
         v
 fetch_jobs.py
@@ -123,7 +123,7 @@ Each job is scored 0–10 against this profile:
 3. Add `GEMINI_API_KEY` with your [Google AI Studio](https://aistudio.google.com/app/apikey) free-tier key
 4. Go to **Actions → Daily Job Search → Run workflow** to test immediately
 
-The workflow runs automatically every day at **8:00 AM PST**.
+The workflow runs automatically every day at **7:00 AM PST**.
 
 ---
 
