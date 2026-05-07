@@ -1,4 +1,4 @@
-# Job Matches — Last updated: 2026-03-30 09:00 AM PST
+# Job Matches — Last updated: 2026-05-07 09:31 AM PST
 
 ## Postings from the last 24 hours
 
@@ -6,14 +6,8 @@
 
 ## Open roles (no timestamp available)
 
-**1. Revenue Operations Analyst, Territory Management | 1Password | Remote | FullTime**
+**1. Supply Chain Analyst Intern | Pivotal | Palo Alto, CA | Full-time (Non-exempt)**
 - Posted: Unknown
-- Link: https://jobs.ashbyhq.com/1password/774bb337-cda3-4097-81a6-988ebb45ebcc
-- Match score: 5/10
-- Why this fits: Moderate keyword match (Python scorer, Gemini unavailable). Signals: partial keyword match on title.
-
-**2. Revenue Operations Analyst, Territory Management | 1Password | Remote | FullTime**
-- Posted: Unknown
-- Link: https://jobs.ashbyhq.com/1password/dd74446b-49c2-424c-ac3d-9494778eb0d7
-- Match score: 5/10
-- Why this fits: Moderate keyword match (Python scorer, Gemini unavailable). Signals: partial keyword match on title.
+- Link: https://jobs.lever.co/pivotal/222ad182-402f-417e-931f-d5968b66e881
+- Match score: 6/10
+- Why this fits: Moderate keyword match (Python scorer, Gemini unavailable). Signals: title matches target analyst roles.
