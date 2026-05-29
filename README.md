@@ -10,7 +10,7 @@ Built for: Business Analyst, Business Systems Analyst, Data Analyst, SAP/ERP Ana
 
 <!-- JOBS_START -->
 
-*Last updated: 2026-05-15 09:46 AM PST*
+*Last updated: 2026-05-29 11:00 AM PST*
 
 ### Postings from the last 24 hours
 
@@ -18,11 +18,11 @@ Built for: Business Analyst, Business Systems Analyst, Data Analyst, SAP/ERP Ana
 
 ### Open roles (no timestamp available)
 
-**1. AML Operations Analyst, Compliance Operator | Ramp | Remote | FullTime**
+**1. Data Analyst (Contract) | Kabam | Vancouver | Contractor**
 - Posted: Unknown
-- Link: https://jobs.ashbyhq.com/ramp/16fb536d-fe10-4ea7-8956-d6d0cbddd6f5
-- Match score: 5/10
-- Why this fits: Moderate keyword match (Python scorer, Gemini unavailable). Signals: partial keyword match on title.
+- Link: https://jobs.lever.co/kabam/d189dbf0-edb4-4a18-8416-1f96a5375717
+- Match score: 9/10
+- Why this fits: Strong keyword match (Python scorer, Gemini unavailable). Signals: title matches target analyst roles; SAP/ERP mentioned in description.
 
 <!-- JOBS_END -->
 
