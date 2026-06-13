@@ -1,52 +1,4 @@
 {
-  "71531f75483a": {
-    "title": "Supply Chain Analyst Intern",
-    "company": "Pivotal",
-    "url": "https://jobs.lever.co/pivotal/222ad182-402f-417e-931f-d5968b66e881",
-    "date_seen": "2026-05-07T16:31:47.667157+00:00",
-    "score": 6,
-    "dated": false
-  },
-  "05622a680d7d": {
-    "title": "Principal Game Data Analyst",
-    "company": "Kabam",
-    "url": "https://jobs.lever.co/kabam/c20e2817-57fb-4df4-bcb4-915d43e46628",
-    "date_seen": "2026-05-08T16:07:56.192442+00:00",
-    "score": 7,
-    "dated": false
-  },
-  "59e066e4693f": {
-    "title": "Analytics Engineering Advocate - Europe",
-    "company": "Lightdash",
-    "url": "https://jobs.ashbyhq.com/lightdash/309706bc-1081-48b6-89dc-f769bbe17e6d",
-    "date_seen": "2026-05-08T16:07:56.192442+00:00",
-    "score": 5,
-    "dated": false
-  },
-  "0d443c537e56": {
-    "title": "Analytics Engineering Advocate - US (Eastern Time)",
-    "company": "Lightdash",
-    "url": "https://jobs.ashbyhq.com/lightdash/8cc71b90-7def-4cd7-9a0b-ba0bc83caef4",
-    "date_seen": "2026-05-08T16:07:56.192442+00:00",
-    "score": 5,
-    "dated": false
-  },
-  "a41c42443ecd": {
-    "title": "AML Operations Analyst ",
-    "company": "Ramp",
-    "url": "https://jobs.ashbyhq.com/ramp/33a7a700-b9e1-4f6e-ac4e-b69942c6b5b0",
-    "date_seen": "2026-05-08T16:07:56.192442+00:00",
-    "score": 5,
-    "dated": false
-  },
-  "52a27b3a01a5": {
-    "title": "AML Operations Analyst, Compliance Operator",
-    "company": "Ramp",
-    "url": "https://jobs.ashbyhq.com/ramp/16fb536d-fe10-4ea7-8956-d6d0cbddd6f5",
-    "date_seen": "2026-05-15T16:46:38.041355+00:00",
-    "score": 5,
-    "dated": false
-  },
   "2da613058627": {
     "title": "Data Analyst (Contract)",
     "company": "Kabam",
@@ -54,5 +6,13 @@
     "date_seen": "2026-05-29T18:00:07.233272+00:00",
     "score": 9,
     "dated": false
+  },
+  "642685ec025a": {
+    "title": "Senior Analyst, Data Analytics and Business Intelligence",
+    "company": "Unknown",
+    "url": "https://jobicy.com/jobs/146312-senior-analyst-data-analytics-and-business-intelligence",
+    "date_seen": "2026-06-13T16:07:38.572778+00:00",
+    "score": 7,
+    "dated": true
   }
 }
