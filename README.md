@@ -10,19 +10,19 @@ Built for: Business Analyst, Business Systems Analyst, Data Analyst, SAP/ERP Ana
 
 <!-- JOBS_START -->
 
-*Last updated: 2026-06-17 10:43 AM PST*
+*Last updated: 2026-06-26 09:54 AM PST*
 
 ### Postings from the last 24 hours
 
-*No new dated postings in the last 24 hours.*
+**1. Senior Data Analyst, Business Intelligence | Unknown | Remote | Unknown**
+- Posted: Fri, 26 Ju
+- Link: https://jobicy.com/jobs/147881-senior-data-analyst-business-intelligence
+- Match score: 6/10
+- Why this fits: Moderate keyword match (Python scorer, Gemini unavailable). Signals: title matches target analyst roles.
 
 ### Open roles (no timestamp available)
 
-**1. Business Intelligence Lead, Performance Marketing | Unknown | Remote | Unknown**
-- Posted: Tue, 16 Ju
-- Link: https://jobicy.com/jobs/146932-business-intelligence-lead-performance-marketing
-- Match score: 6/10
-- Why this fits: Moderate keyword match (Python scorer, Gemini unavailable). Signals: partial keyword match on title.
+*No undated roles found.*
 
 <!-- JOBS_END -->
 
