@@ -1,12 +1,4 @@
 {
-  "51b7b3eb1e1e": {
-    "title": "Business Intelligence Lead, Performance Marketing",
-    "company": "Unknown",
-    "url": "https://jobicy.com/jobs/146932-business-intelligence-lead-performance-marketing",
-    "date_seen": "2026-06-17T17:43:25.311353+00:00",
-    "score": 6,
-    "dated": false
-  },
   "facb90d84c18": {
     "title": "Senior Data Analyst, Business Intelligence",
     "company": "Unknown",
@@ -78,5 +70,29 @@
     "date_seen": "2026-07-12T15:46:41.556397+00:00",
     "score": 6,
     "dated": true
+  },
+  "774f07775a7b": {
+    "title": "Senior Data Analyst, Marketing",
+    "company": "1Password",
+    "url": "https://jobs.ashbyhq.com/1password/ae49f20e-274a-4d5b-972a-6f728a531f56",
+    "date_seen": "2026-07-14T16:07:21.483389+00:00",
+    "score": 6,
+    "dated": false
+  },
+  "710197a6ad4e": {
+    "title": "Staff Data Analyst, Marketing",
+    "company": "1Password",
+    "url": "https://jobs.ashbyhq.com/1password/45393747-1ed7-4eb9-bcda-4c74fe5e9824",
+    "date_seen": "2026-07-14T16:07:21.483389+00:00",
+    "score": 6,
+    "dated": false
+  },
+  "52a27b3a01a5": {
+    "title": "AML Operations Analyst",
+    "company": "Ramp",
+    "url": "https://jobs.ashbyhq.com/ramp/16fb536d-fe10-4ea7-8956-d6d0cbddd6f5",
+    "date_seen": "2026-07-14T16:07:21.483389+00:00",
+    "score": 5,
+    "dated": false
   }
 }
