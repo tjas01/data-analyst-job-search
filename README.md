@@ -10,19 +10,19 @@ Built for: Business Analyst, Business Systems Analyst, Data Analyst, SAP/ERP Ana
 
 <!-- JOBS_START -->
 
-*Last updated: 2026-07-16 09:24 AM PST*
+*Last updated: 2026-07-22 09:12 AM PST*
 
 ### Postings from the last 24 hours
 
-*No new dated postings in the last 24 hours.*
+**1. Highmark Health: Business Analyst - Sponsored Programs Financial Services - Clinical Trials | Unknown | Remote | Unknown**
+- Posted: Wed, 22 Ju
+- Link: https://weworkremotely.com/remote-jobs/highmark-health-business-analyst-sponsored-programs-financial-services-clinical-trials
+- Match score: 6/10
+- Why this fits: Moderate keyword match (Python scorer, Gemini unavailable). Signals: title aligns with BA/ERP target roles.
 
 ### Open roles (no timestamp available)
 
-**1. Senior Analytics Engineer | 1Password | Remote | FullTime**
-- Posted: Unknown
-- Link: https://jobs.ashbyhq.com/1password/e07bc774-d90b-443d-89f1-bec8fff33360
-- Match score: 5/10
-- Why this fits: Moderate keyword match (Python scorer, Gemini unavailable). Signals: partial keyword match on title.
+*No undated roles found.*
 
 <!-- JOBS_END -->
 
