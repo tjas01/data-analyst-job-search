@@ -1,12 +1,12 @@
-# Job Matches — Last updated: 2026-07-22 09:12 AM PST
+# Job Matches — Last updated: 2026-07-27 09:52 AM PST
 
 ## Postings from the last 24 hours
 
-**1. Highmark Health: Business Analyst - Sponsored Programs Financial Services - Clinical Trials | Unknown | Remote | Unknown**
-- Posted: Wed, 22 Ju
-- Link: https://weworkremotely.com/remote-jobs/highmark-health-business-analyst-sponsored-programs-financial-services-clinical-trials
+**1. Senior Data Analyst, Business Intelligence | Unknown | Remote | Unknown**
+- Posted: Mon, 27 Ju
+- Link: https://jobicy.com/jobs/147881-senior-data-analyst-business-intelligence
 - Match score: 6/10
-- Why this fits: Moderate keyword match (Python scorer, Gemini unavailable). Signals: title aligns with BA/ERP target roles.
+- Why this fits: Moderate keyword match (Python scorer, Gemini unavailable). Signals: title matches target analyst roles.
 
 ## Open roles (no timestamp available)
 
