@@ -1,60 +1,4 @@
 {
-  "84ebcbfdc652": {
-    "title": "Lead BI Developer",
-    "company": "Unknown",
-    "url": "https://jobicy.com/jobs/146930-lead-bi-developer",
-    "date_seen": "2026-07-04T15:52:56.349368+00:00",
-    "score": 1,
-    "dated": false
-  },
-  "66a9901028c1": {
-    "title": "Lead Data Analyst, Marketing",
-    "company": "Unknown",
-    "url": "https://jobicy.com/jobs/146928-lead-data-analyst-marketing-2",
-    "date_seen": "2026-07-04T15:52:56.349368+00:00",
-    "score": 6,
-    "dated": false
-  },
-  "d9438a987f1b": {
-    "title": "Senior Data Analyst",
-    "company": "Unknown",
-    "url": "https://jobicy.com/jobs/142571-senior-data-analyst-3",
-    "date_seen": "2026-07-04T15:52:56.349368+00:00",
-    "score": 8,
-    "dated": false
-  },
-  "adec678d96bd": {
-    "title": "Costpoint Cognos Report Writer and General Ledger Business Analyst",
-    "company": "Unknown",
-    "url": "https://jobicy.com/jobs/149012-costpoint-cognos-report-writer-and-general-ledger-business-analyst",
-    "date_seen": "2026-07-09T17:10:10.451443+00:00",
-    "score": 2,
-    "dated": true
-  },
-  "3f372ea247e9": {
-    "title": "Data Analyst, Product",
-    "company": "1Password",
-    "url": "https://jobs.ashbyhq.com/1password/14829e7a-7826-4487-843a-08f6741f03dd",
-    "date_seen": "2026-07-10T16:49:31.081929+00:00",
-    "score": 6,
-    "dated": false
-  },
-  "59e066e4693f": {
-    "title": "Analytics Engineering Advocate - Europe",
-    "company": "Lightdash",
-    "url": "https://jobs.ashbyhq.com/lightdash/309706bc-1081-48b6-89dc-f769bbe17e6d",
-    "date_seen": "2026-07-10T16:49:31.081929+00:00",
-    "score": 5,
-    "dated": false
-  },
-  "43142e9e6694": {
-    "title": "Senior Business Analyst, Revenue Analytics",
-    "company": "Unknown",
-    "url": "https://jobicy.com/jobs/147605-senior-business-analyst-revenue-analytics",
-    "date_seen": "2026-07-12T15:46:41.556397+00:00",
-    "score": 6,
-    "dated": true
-  },
   "774f07775a7b": {
     "title": "Senior Data Analyst, Marketing",
     "company": "1Password",
@@ -102,5 +46,13 @@
     "date_seen": "2026-07-27T16:52:28.792671+00:00",
     "score": 6,
     "dated": true
+  },
+  "5e77b1f8be4f": {
+    "title": "Data Analyst",
+    "company": "Kabam",
+    "url": "https://jobs.lever.co/kabam/cbdbaeeb-1228-40c6-a022-48306ea63635",
+    "date_seen": "2026-08-07T15:42:01.775326+00:00",
+    "score": 9,
+    "dated": false
   }
 }
