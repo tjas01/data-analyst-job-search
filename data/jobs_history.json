@@ -1,12 +1,4 @@
 {
-  "facb90d84c18": {
-    "title": "Senior Data Analyst, Business Intelligence",
-    "company": "Unknown",
-    "url": "https://jobicy.com/jobs/147881-senior-data-analyst-business-intelligence",
-    "date_seen": "2026-07-27T16:52:28.792671+00:00",
-    "score": 6,
-    "dated": true
-  },
   "5e77b1f8be4f": {
     "title": "Data Analyst",
     "company": "Kabam",
@@ -53,6 +45,22 @@
     "url": "https://jobs.ashbyhq.com/1password/32eb8288-f53a-40f6-9c90-1a0063bcabca",
     "date_seen": "2026-08-21T15:21:54.163255+00:00",
     "score": 5,
+    "dated": false
+  },
+  "7f4ba43a6962": {
+    "title": "Business Intelligence Lead, Performance Marketing",
+    "company": "Unknown",
+    "url": "https://jobicy.com/jobs/151514-business-intelligence-lead-performance-marketing-2",
+    "date_seen": "2026-08-25T15:31:58.433676+00:00",
+    "score": 6,
+    "dated": true
+  },
+  "f3482b227b08": {
+    "title": "GTM Senior Business Systems Analyst",
+    "company": "Ramp",
+    "url": "https://jobs.ashbyhq.com/ramp/87de7e0e-5214-49bc-bb81-54782e9c3ad5",
+    "date_seen": "2026-08-25T15:31:58.433676+00:00",
+    "score": 8,
     "dated": false
   }
 }
