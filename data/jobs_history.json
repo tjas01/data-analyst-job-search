@@ -1,12 +1,4 @@
 {
-  "5e77b1f8be4f": {
-    "title": "Data Analyst",
-    "company": "Kabam",
-    "url": "https://jobs.lever.co/kabam/cbdbaeeb-1228-40c6-a022-48306ea63635",
-    "date_seen": "2026-08-07T15:42:01.775326+00:00",
-    "score": 9,
-    "dated": false
-  },
   "adec678d96bd": {
     "title": "Costpoint Cognos Report Writer and General Ledger Business Analyst",
     "company": "Unknown",
@@ -85,6 +77,30 @@
     "url": "https://jobicy.com/jobs/142571-senior-data-analyst-3",
     "date_seen": "2026-08-28T00:08:25.955078+00:00",
     "score": 8,
+    "dated": false
+  },
+  "1f6cf1522939": {
+    "title": "Staff, Analytics Engineer, GTM Data Science & Analytics",
+    "company": "Unknown",
+    "url": "https://jobicy.com/jobs/152321-staff-analytics-engineer-gtm-data-science-analytics",
+    "date_seen": "2026-09-01T18:01:35.596185+00:00",
+    "score": 5,
+    "dated": false
+  },
+  "8a02ba9233b8": {
+    "title": "Senior Data Analyst, GTM",
+    "company": "Unknown",
+    "url": "https://jobicy.com/jobs/152315-senior-data-analyst-gtm",
+    "date_seen": "2026-09-01T18:01:35.596185+00:00",
+    "score": 6,
+    "dated": false
+  },
+  "9c3a053da3c4": {
+    "title": "Principal Analytics Engineer",
+    "company": "Unknown",
+    "url": "https://jobicy.com/jobs/152320-principal-analytics-engineer",
+    "date_seen": "2026-09-01T18:01:35.596185+00:00",
+    "score": 5,
     "dated": false
   }
 }
