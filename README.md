@@ -10,7 +10,7 @@ Built for: Business Analyst, Business Systems Analyst, Data Analyst, SAP/ERP Ana
 
 <!-- JOBS_START -->
 
-*Last updated: 2026-09-01 11:01 AM PST*
+*Last updated: 2026-09-02 11:12 AM PST*
 
 ### Postings from the last 24 hours
 
@@ -18,23 +18,11 @@ Built for: Business Analyst, Business Systems Analyst, Data Analyst, SAP/ERP Ana
 
 ### Open roles (no timestamp available)
 
-**1. Senior Data Analyst, GTM | Unknown | Remote | Unknown**
-- Posted: Tue, 01 Se
-- Link: https://jobicy.com/jobs/152315-senior-data-analyst-gtm
-- Match score: 6/10
-- Why this fits: Moderate keyword match (Python scorer, Gemini unavailable). Signals: title matches target analyst roles.
-
-**2. Staff, Analytics Engineer, GTM Data Science & Analytics | Unknown | Remote | Unknown**
-- Posted: Tue, 01 Se
-- Link: https://jobicy.com/jobs/152321-staff-analytics-engineer-gtm-data-science-analytics
-- Match score: 5/10
-- Why this fits: Moderate keyword match (Python scorer, Gemini unavailable). Signals: partial keyword match on title.
-
-**3. Principal Analytics Engineer | Unknown | Remote | Unknown**
-- Posted: Tue, 01 Se
-- Link: https://jobicy.com/jobs/152320-principal-analytics-engineer
-- Match score: 5/10
-- Why this fits: Moderate keyword match (Python scorer, Gemini unavailable). Signals: partial keyword match on title.
+**1. Data Analyst | Kabam | Vancouver | Regular Full-time (RFT)**
+- Posted: Unknown
+- Link: https://jobs.lever.co/kabam/cbdbaeeb-1228-40c6-a022-48306ea63635
+- Match score: 9/10
+- Why this fits: Strong keyword match (Python scorer, Gemini unavailable). Signals: title matches target analyst roles; SAP/ERP mentioned in description.
 
 <!-- JOBS_END -->
 
