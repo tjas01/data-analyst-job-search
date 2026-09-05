@@ -1,36 +1,4 @@
 {
-  "adec678d96bd": {
-    "title": "Costpoint Cognos Report Writer and General Ledger Business Analyst",
-    "company": "Unknown",
-    "url": "https://jobicy.com/jobs/149012-costpoint-cognos-report-writer-and-general-ledger-business-analyst",
-    "date_seen": "2026-08-09T15:19:32.883396+00:00",
-    "score": 2,
-    "dated": true
-  },
-  "59e066e4693f": {
-    "title": "Analytics Engineering Advocate - Europe",
-    "company": "Lightdash",
-    "url": "https://jobs.ashbyhq.com/lightdash/309706bc-1081-48b6-89dc-f769bbe17e6d",
-    "date_seen": "2026-08-09T15:19:32.883396+00:00",
-    "score": 5,
-    "dated": false
-  },
-  "710197a6ad4e": {
-    "title": "Staff Data Analyst, Marketing",
-    "company": "1Password",
-    "url": "https://jobs.ashbyhq.com/1password/45393747-1ed7-4eb9-bcda-4c74fe5e9824",
-    "date_seen": "2026-08-10T15:47:41.890584+00:00",
-    "score": 6,
-    "dated": false
-  },
-  "52a27b3a01a5": {
-    "title": "AML Operations Analyst",
-    "company": "Ramp",
-    "url": "https://jobs.ashbyhq.com/ramp/16fb536d-fe10-4ea7-8956-d6d0cbddd6f5",
-    "date_seen": "2026-08-10T15:47:41.890584+00:00",
-    "score": 5,
-    "dated": false
-  },
   "5b1c0704981c": {
     "title": "Director Analytics Engineering",
     "company": "1Password",
@@ -109,6 +77,22 @@
     "url": "https://jobs.lever.co/kabam/cbdbaeeb-1228-40c6-a022-48306ea63635",
     "date_seen": "2026-09-02T18:12:28.000883+00:00",
     "score": 9,
+    "dated": false
+  },
+  "7eaeb975620f": {
+    "title": "Data Analyst, Supply Chain",
+    "company": "Unknown",
+    "url": "https://jobicy.com/jobs/152583-data-analyst-supply-chain",
+    "date_seen": "2026-09-05T16:59:06.697115+00:00",
+    "score": 6,
+    "dated": true
+  },
+  "71914860f67c": {
+    "title": "GTM Business Systems Analyst \u2013 Post Sales",
+    "company": "Ramp",
+    "url": "https://jobs.ashbyhq.com/ramp/196e4e25-c452-430d-8b2f-36a40f88a2ae",
+    "date_seen": "2026-09-05T16:59:06.697115+00:00",
+    "score": 8,
     "dated": false
   }
 }
