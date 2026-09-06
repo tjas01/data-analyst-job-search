@@ -10,23 +10,31 @@ Built for: Business Analyst, Business Systems Analyst, Data Analyst, SAP/ERP Ana
 
 <!-- JOBS_START -->
 
-*Last updated: 2026-09-05 09:59 AM PST*
+*Last updated: 2026-09-06 10:23 AM PST*
 
 ### Postings from the last 24 hours
 
-**1. Data Analyst, Supply Chain | Unknown | Remote | Unknown**
-- Posted: Sat, 05 Se
-- Link: https://jobicy.com/jobs/152583-data-analyst-supply-chain
-- Match score: 6/10
-- Why this fits: Moderate keyword match (Python scorer, Gemini unavailable). Signals: title matches target analyst roles.
+*No new dated postings in the last 24 hours.*
 
 ### Open roles (no timestamp available)
 
-**1. GTM Business Systems Analyst – Post Sales | Ramp | Remote | FullTime**
+**1. Staff Data Analyst, Marketing | 1Password | Remote | FullTime**
 - Posted: Unknown
-- Link: https://jobs.ashbyhq.com/ramp/196e4e25-c452-430d-8b2f-36a40f88a2ae
-- Match score: 8/10
-- Why this fits: Strong keyword match (Python scorer, Gemini unavailable). Signals: title is a top-priority BSA role.
+- Link: https://jobs.ashbyhq.com/1password/45393747-1ed7-4eb9-bcda-4c74fe5e9824
+- Match score: 6/10
+- Why this fits: Moderate keyword match (Python scorer, Gemini unavailable). Signals: title matches target analyst roles.
+
+**2. Analytics Engineering Advocate - Europe | Lightdash | Remote | FullTime**
+- Posted: Unknown
+- Link: https://jobs.ashbyhq.com/lightdash/309706bc-1081-48b6-89dc-f769bbe17e6d
+- Match score: 5/10
+- Why this fits: Moderate keyword match (Python scorer, Gemini unavailable). Signals: partial keyword match on title.
+
+**3. Costpoint Cognos Report Writer and General Ledger Business Analyst | Unknown | Remote | Unknown**
+- Posted: Thu, 03 Se
+- Link: https://jobicy.com/jobs/149012-costpoint-cognos-report-writer-and-general-ledger-business-analyst
+- Match score: 2/10
+- Why this fits: Weak keyword match (Python scorer, Gemini unavailable). Signals: title aligns with BA/ERP target roles.
 
 <!-- JOBS_END -->
 
