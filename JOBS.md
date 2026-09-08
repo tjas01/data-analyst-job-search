@@ -1,4 +1,4 @@
-# Job Matches — Last updated: 2026-09-06 10:23 AM PST
+# Job Matches — Last updated: 2026-09-08 11:10 AM PST
 
 ## Postings from the last 24 hours
 
@@ -6,20 +6,14 @@
 
 ## Open roles (no timestamp available)
 
-**1. Staff Data Analyst, Marketing | 1Password | Remote | FullTime**
+**1. GTM Senior Business Systems Analyst – Channel Sales | Ramp | Remote | FullTime**
 - Posted: Unknown
-- Link: https://jobs.ashbyhq.com/1password/45393747-1ed7-4eb9-bcda-4c74fe5e9824
-- Match score: 6/10
-- Why this fits: Moderate keyword match (Python scorer, Gemini unavailable). Signals: title matches target analyst roles.
+- Link: https://jobs.ashbyhq.com/ramp/2d2c336c-16e7-4f27-b0cd-5bb6055cdf21
+- Match score: 8/10
+- Why this fits: Strong keyword match (Python scorer, Gemini unavailable). Signals: title is a top-priority BSA role.
 
-**2. Analytics Engineering Advocate - Europe | Lightdash | Remote | FullTime**
+**2. GTM Senior Business Systems Analyst, Pre-Sales | Ramp | Remote | FullTime**
 - Posted: Unknown
-- Link: https://jobs.ashbyhq.com/lightdash/309706bc-1081-48b6-89dc-f769bbe17e6d
-- Match score: 5/10
-- Why this fits: Moderate keyword match (Python scorer, Gemini unavailable). Signals: partial keyword match on title.
-
-**3. Costpoint Cognos Report Writer and General Ledger Business Analyst | Unknown | Remote | Unknown**
-- Posted: Thu, 03 Se
-- Link: https://jobicy.com/jobs/149012-costpoint-cognos-report-writer-and-general-ledger-business-analyst
-- Match score: 2/10
-- Why this fits: Weak keyword match (Python scorer, Gemini unavailable). Signals: title aligns with BA/ERP target roles.
+- Link: https://jobs.ashbyhq.com/ramp/aa433e44-f095-484b-a46a-a330583d84b0
+- Match score: 8/10
+- Why this fits: Strong keyword match (Python scorer, Gemini unavailable). Signals: title is a top-priority BSA role.
