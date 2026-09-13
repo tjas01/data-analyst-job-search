@@ -1,12 +1,12 @@
-# Job Matches — Last updated: 2026-09-09 11:06 AM PST
+# Job Matches — Last updated: 2026-09-13 10:46 AM PST
 
 ## Postings from the last 24 hours
 
-**1. Senior Data Analyst | Unknown | Remote | Unknown**
-- Posted: Wed, 09 Se
-- Link: https://jobicy.com/jobs/152859-senior-data-analyst
+**1. Business Intelligence Analyst | Unknown | Remote | Unknown**
+- Posted: Sun, 13 Se
+- Link: https://jobicy.com/jobs/153151-business-intelligence-analyst
 - Match score: 6/10
-- Why this fits: Moderate keyword match (Python scorer, Gemini unavailable). Signals: title matches target analyst roles.
+- Why this fits: Moderate keyword match (Python scorer, Gemini unavailable). Signals: partial keyword match on title.
 
 ## Open roles (no timestamp available)
 
