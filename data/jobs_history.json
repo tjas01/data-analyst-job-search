@@ -1,12 +1,4 @@
 {
-  "5b1c0704981c": {
-    "title": "Director Analytics Engineering",
-    "company": "1Password",
-    "url": "https://jobs.ashbyhq.com/1password/32eb8288-f53a-40f6-9c90-1a0063bcabca",
-    "date_seen": "2026-08-21T15:21:54.163255+00:00",
-    "score": 5,
-    "dated": false
-  },
   "7f4ba43a6962": {
     "title": "Business Intelligence Lead, Performance Marketing",
     "company": "Unknown",
@@ -149,6 +141,14 @@
     "url": "https://jobicy.com/jobs/153151-business-intelligence-analyst",
     "date_seen": "2026-09-13T17:46:23.636451+00:00",
     "score": 6,
+    "dated": true
+  },
+  "601ffcd21231": {
+    "title": "Senior Revenue Operations Analyst",
+    "company": "Unknown",
+    "url": "https://jobicy.com/jobs/153550-senior-revenue-operations-analyst",
+    "date_seen": "2026-09-18T17:56:59.088289+00:00",
+    "score": 5,
     "dated": true
   }
 }
