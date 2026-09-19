@@ -1,13 +1,13 @@
-# Job Matches — Last updated: 2026-09-18 10:56 AM PST
+# Job Matches — Last updated: 2026-09-19 10:33 AM PST
 
 ## Postings from the last 24 hours
 
-**1. Senior Revenue Operations Analyst | Unknown | Remote | Unknown**
-- Posted: Fri, 18 Se
-- Link: https://jobicy.com/jobs/153550-senior-revenue-operations-analyst
-- Match score: 5/10
-- Why this fits: Moderate keyword match (Python scorer, Gemini unavailable). Signals: partial keyword match on title.
+*No new dated postings in the last 24 hours.*
 
 ## Open roles (no timestamp available)
 
-*No undated roles found.*
+**1. Director Analytics Engineering | 1Password | Remote | FullTime**
+- Posted: Unknown
+- Link: https://jobs.ashbyhq.com/1password/32eb8288-f53a-40f6-9c90-1a0063bcabca
+- Match score: 5/10
+- Why this fits: Moderate keyword match (Python scorer, Gemini unavailable). Signals: partial keyword match on title.

@@ -1,20 +1,4 @@
 {
-  "7f4ba43a6962": {
-    "title": "Business Intelligence Lead, Performance Marketing",
-    "company": "Unknown",
-    "url": "https://jobicy.com/jobs/151514-business-intelligence-lead-performance-marketing-2",
-    "date_seen": "2026-08-25T15:31:58.433676+00:00",
-    "score": 6,
-    "dated": true
-  },
-  "f3482b227b08": {
-    "title": "GTM Senior Business Systems Analyst",
-    "company": "Ramp",
-    "url": "https://jobs.ashbyhq.com/ramp/87de7e0e-5214-49bc-bb81-54782e9c3ad5",
-    "date_seen": "2026-08-25T15:31:58.433676+00:00",
-    "score": 8,
-    "dated": false
-  },
   "cc225e7f9c04": {
     "title": "Chargebacks Data Analyst (BR)",
     "company": "Unknown",
@@ -150,5 +134,13 @@
     "date_seen": "2026-09-18T17:56:59.088289+00:00",
     "score": 5,
     "dated": true
+  },
+  "5b1c0704981c": {
+    "title": "Director Analytics Engineering",
+    "company": "1Password",
+    "url": "https://jobs.ashbyhq.com/1password/32eb8288-f53a-40f6-9c90-1a0063bcabca",
+    "date_seen": "2026-09-19T17:33:49.176195+00:00",
+    "score": 5,
+    "dated": false
   }
 }
