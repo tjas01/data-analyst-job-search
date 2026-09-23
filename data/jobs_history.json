@@ -1,28 +1,4 @@
 {
-  "cc225e7f9c04": {
-    "title": "Chargebacks Data Analyst (BR)",
-    "company": "Unknown",
-    "url": "https://jobicy.com/jobs/151736-chargebacks-data-analyst-br",
-    "date_seen": "2026-08-26T16:08:08.022177+00:00",
-    "score": 6,
-    "dated": true
-  },
-  "9e09b9dedbe2": {
-    "title": "Chargeback Data Analyst (MX)",
-    "company": "Unknown",
-    "url": "https://jobicy.com/jobs/151726-chargeback-data-analyst-mx",
-    "date_seen": "2026-08-26T16:08:08.022177+00:00",
-    "score": 6,
-    "dated": true
-  },
-  "d9438a987f1b": {
-    "title": "Senior Data Analyst",
-    "company": "Unknown",
-    "url": "https://jobicy.com/jobs/142571-senior-data-analyst-3",
-    "date_seen": "2026-08-28T00:08:25.955078+00:00",
-    "score": 8,
-    "dated": false
-  },
   "1f6cf1522939": {
     "title": "Staff, Analytics Engineer, GTM Data Science & Analytics",
     "company": "Unknown",
@@ -142,5 +118,13 @@
     "date_seen": "2026-09-19T17:33:49.176195+00:00",
     "score": 5,
     "dated": false
+  },
+  "216ee489becf": {
+    "title": "Data Analyst \u2013 SQL / Databricks",
+    "company": "Unknown",
+    "url": "https://jobicy.com/jobs/153978-data-analyst-sql-databricks",
+    "date_seen": "2026-09-23T18:43:16.567229+00:00",
+    "score": 6,
+    "dated": true
   }
 }
