@@ -1,4 +1,4 @@
-# Job Matches — Last updated: 2026-09-24 11:44 AM PST
+# Job Matches — Last updated: 2026-09-29 12:41 PM PST
 
 ## Postings from the last 24 hours
 
@@ -6,8 +6,8 @@
 
 ## Open roles (no timestamp available)
 
-**1. Senior Data Analyst | Unknown | Remote | Unknown**
-- Posted: Thu, 27 Au
-- Link: https://jobicy.com/jobs/142571-senior-data-analyst-3
-- Match score: 8/10
-- Why this fits: Strong keyword match (Python scorer, Gemini unavailable). Signals: title matches target analyst roles; SAP/ERP mentioned in description.
+**1. Senior Fullstack Data Analyst (Commercial Analytics) | Unknown | Remote | Unknown**
+- Posted: Tue, 29 Se
+- Link: https://jobicy.com/jobs/154224-senior-fullstack-data-analyst-commercial-analytics
+- Match score: 6/10
+- Why this fits: Moderate keyword match (Python scorer, Gemini unavailable). Signals: title matches target analyst roles.
