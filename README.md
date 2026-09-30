@@ -10,7 +10,7 @@ Built for: Business Analyst, Business Systems Analyst, Data Analyst, SAP/ERP Ana
 
 <!-- JOBS_START -->
 
-*Last updated: 2026-09-29 12:41 PM PST*
+*Last updated: 2026-09-30 12:42 PM PST*
 
 ### Postings from the last 24 hours
 
@@ -18,9 +18,15 @@ Built for: Business Analyst, Business Systems Analyst, Data Analyst, SAP/ERP Ana
 
 ### Open roles (no timestamp available)
 
-**1. Senior Fullstack Data Analyst (Commercial Analytics) | Unknown | Remote | Unknown**
+**1. Business Intelligence Lead, Performance Marketing | Unknown | Remote | Unknown**
 - Posted: Tue, 29 Se
-- Link: https://jobicy.com/jobs/154224-senior-fullstack-data-analyst-commercial-analytics
+- Link: https://jobicy.com/jobs/154232-business-intelligence-lead-performance-marketing-3
+- Match score: 6/10
+- Why this fits: Moderate keyword match (Python scorer, Gemini unavailable). Signals: partial keyword match on title.
+
+**2. Senior Data Analyst, GTM | Unknown | Remote | Unknown**
+- Posted: Tue, 01 Se
+- Link: https://jobicy.com/jobs/152315-senior-data-analyst-gtm
 - Match score: 6/10
 - Why this fits: Moderate keyword match (Python scorer, Gemini unavailable). Signals: title matches target analyst roles.
 
