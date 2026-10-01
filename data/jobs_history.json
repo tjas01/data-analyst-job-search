@@ -1,28 +1,4 @@
 {
-  "adec678d96bd": {
-    "title": "Costpoint Cognos Report Writer and General Ledger Business Analyst",
-    "company": "Unknown",
-    "url": "https://jobicy.com/jobs/149012-costpoint-cognos-report-writer-and-general-ledger-business-analyst",
-    "date_seen": "2026-09-06T17:23:50.234916+00:00",
-    "score": 2,
-    "dated": false
-  },
-  "710197a6ad4e": {
-    "title": "Staff Data Analyst, Marketing",
-    "company": "1Password",
-    "url": "https://jobs.ashbyhq.com/1password/45393747-1ed7-4eb9-bcda-4c74fe5e9824",
-    "date_seen": "2026-09-06T17:23:50.234916+00:00",
-    "score": 6,
-    "dated": false
-  },
-  "59e066e4693f": {
-    "title": "Analytics Engineering Advocate - Europe",
-    "company": "Lightdash",
-    "url": "https://jobs.ashbyhq.com/lightdash/309706bc-1081-48b6-89dc-f769bbe17e6d",
-    "date_seen": "2026-09-06T17:23:50.234916+00:00",
-    "score": 5,
-    "dated": false
-  },
   "caaf382a9f46": {
     "title": "GTM Senior Business Systems Analyst \u2013 Channel Sales",
     "company": "Ramp",
@@ -109,6 +85,22 @@
     "url": "https://jobicy.com/jobs/152315-senior-data-analyst-gtm",
     "date_seen": "2026-09-30T19:42:57.376974+00:00",
     "score": 6,
+    "dated": false
+  },
+  "4d442d87f906": {
+    "title": "Senior Data Analyst (Fully Remote)",
+    "company": "Unknown",
+    "url": "https://jobicy.com/jobs/154331-senior-data-analyst-fully-remote",
+    "date_seen": "2026-10-01T19:57:23.578633+00:00",
+    "score": 6,
+    "dated": false
+  },
+  "71914860f67c": {
+    "title": "GTM Business Systems Analyst \u2013 Post Sales",
+    "company": "Ramp",
+    "url": "https://jobs.ashbyhq.com/ramp/196e4e25-c452-430d-8b2f-36a40f88a2ae",
+    "date_seen": "2026-10-01T19:57:23.578633+00:00",
+    "score": 8,
     "dated": false
   }
 }
