@@ -1,12 +1,4 @@
 {
-  "20ec92a996ea": {
-    "title": "Senior Data Analyst",
-    "company": "Unknown",
-    "url": "https://jobicy.com/jobs/152859-senior-data-analyst",
-    "date_seen": "2026-09-09T18:06:27.598774+00:00",
-    "score": 6,
-    "dated": true
-  },
   "7f7564ac0596": {
     "title": "Business Intelligence Analyst",
     "company": "Unknown",
@@ -118,5 +110,29 @@
     "date_seen": "2026-10-03T18:23:59.680774+00:00",
     "score": 5,
     "dated": true
+  },
+  "f926e30125f1": {
+    "title": "Analytics Engineer II, Full Stack (Revenue Analytics)",
+    "company": "Unknown",
+    "url": "https://jobicy.com/jobs/154478-analytics-engineer-ii-full-stack-revenue-analytics",
+    "date_seen": "2026-10-04T18:27:27.527683+00:00",
+    "score": 5,
+    "dated": true
+  },
+  "caaf382a9f46": {
+    "title": "GTM Senior Business Systems Analyst \u2013 Channel Sales",
+    "company": "Ramp",
+    "url": "https://jobs.ashbyhq.com/ramp/2d2c336c-16e7-4f27-b0cd-5bb6055cdf21",
+    "date_seen": "2026-10-04T18:27:27.527683+00:00",
+    "score": 8,
+    "dated": false
+  },
+  "c44c63bdbe4b": {
+    "title": "GTM Senior Business Systems Analyst, Pre-Sales",
+    "company": "Ramp",
+    "url": "https://jobs.ashbyhq.com/ramp/aa433e44-f095-484b-a46a-a330583d84b0",
+    "date_seen": "2026-10-04T18:27:27.527683+00:00",
+    "score": 8,
+    "dated": false
   }
 }
