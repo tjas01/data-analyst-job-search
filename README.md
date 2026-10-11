@@ -10,15 +10,15 @@ Built for: Business Analyst, Business Systems Analyst, Data Analyst, SAP/ERP Ana
 
 <!-- JOBS_START -->
 
-*Last updated: 2026-10-10 12:02 PM PST*
+*Last updated: 2026-10-11 12:16 PM PST*
 
 ### Postings from the last 24 hours
 
-**1. Senior Data Analyst | Unknown | Remote | Unknown**
-- Posted: Sat, 10 Oc
-- Link: https://jobicy.com/jobs/152859-senior-data-analyst
-- Match score: 6/10
-- Why this fits: Moderate keyword match (Python scorer, Gemini unavailable). Signals: title matches target analyst roles.
+**1. Twilio: Billing Operations Analyst 1 | Unknown | Remote | Unknown**
+- Posted: Sun, 11 Oc
+- Link: https://weworkremotely.com/remote-jobs/twilio-billing-operations-analyst-1
+- Match score: 5/10
+- Why this fits: Moderate keyword match (Python scorer, Gemini unavailable). Signals: partial keyword match on title.
 
 ### Open roles (no timestamp available)
 
