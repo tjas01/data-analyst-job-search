@@ -1,20 +1,4 @@
 {
-  "601ffcd21231": {
-    "title": "Senior Revenue Operations Analyst",
-    "company": "Unknown",
-    "url": "https://jobicy.com/jobs/153550-senior-revenue-operations-analyst",
-    "date_seen": "2026-09-18T17:56:59.088289+00:00",
-    "score": 5,
-    "dated": true
-  },
-  "5b1c0704981c": {
-    "title": "Director Analytics Engineering",
-    "company": "1Password",
-    "url": "https://jobs.ashbyhq.com/1password/32eb8288-f53a-40f6-9c90-1a0063bcabca",
-    "date_seen": "2026-09-19T17:33:49.176195+00:00",
-    "score": 5,
-    "dated": false
-  },
   "216ee489becf": {
     "title": "Data Analyst \u2013 SQL / Databricks",
     "company": "Unknown",
@@ -157,6 +141,14 @@
     "url": "https://jobicy.com/jobs/155159-lead-bi-developer-2",
     "date_seen": "2026-10-12T22:17:27.112878+00:00",
     "score": 1,
+    "dated": true
+  },
+  "7f7564ac0596": {
+    "title": "Business Intelligence Analyst",
+    "company": "Unknown",
+    "url": "https://jobicy.com/jobs/153151-business-intelligence-analyst",
+    "date_seen": "2026-10-14T19:01:09.793315+00:00",
+    "score": 6,
     "dated": true
   }
 }
