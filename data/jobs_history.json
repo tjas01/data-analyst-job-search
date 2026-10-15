@@ -150,5 +150,21 @@
     "date_seen": "2026-10-14T19:01:09.793315+00:00",
     "score": 6,
     "dated": true
+  },
+  "5b1c0704981c": {
+    "title": "Director Analytics Engineering",
+    "company": "1Password",
+    "url": "https://jobs.ashbyhq.com/1password/32eb8288-f53a-40f6-9c90-1a0063bcabca",
+    "date_seen": "2026-10-15T18:45:07.266857+00:00",
+    "score": 5,
+    "dated": false
+  },
+  "d7d8c164294e": {
+    "title": "Data Analyst, Finance Analytics",
+    "company": "1Password",
+    "url": "https://jobs.ashbyhq.com/1password/ca3d814c-946a-447a-b41a-0257fcf7e2cd",
+    "date_seen": "2026-10-15T18:45:07.266857+00:00",
+    "score": 6,
+    "dated": false
   }
 }
