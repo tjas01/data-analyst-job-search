@@ -10,25 +10,19 @@ Built for: Business Analyst, Business Systems Analyst, Data Analyst, SAP/ERP Ana
 
 <!-- JOBS_START -->
 
-*Last updated: 2026-10-15 11:45 AM PST*
+*Last updated: 2026-10-16 11:29 AM PST*
 
 ### Postings from the last 24 hours
 
-*No new dated postings in the last 24 hours.*
+**1. Sales Business Analyst | Unknown | Remote | Unknown**
+- Posted: Fri, 16 Oc
+- Link: https://jobicy.com/jobs/155434-sales-business-analyst
+- Match score: 6/10
+- Why this fits: Moderate keyword match (Python scorer, Gemini unavailable). Signals: title aligns with BA/ERP target roles.
 
 ### Open roles (no timestamp available)
 
-**1. Data Analyst, Finance Analytics | 1Password | Remote | FullTime**
-- Posted: Unknown
-- Link: https://jobs.ashbyhq.com/1password/ca3d814c-946a-447a-b41a-0257fcf7e2cd
-- Match score: 6/10
-- Why this fits: Moderate keyword match (Python scorer, Gemini unavailable). Signals: title matches target analyst roles.
-
-**2. Director Analytics Engineering | 1Password | Remote | FullTime**
-- Posted: Unknown
-- Link: https://jobs.ashbyhq.com/1password/32eb8288-f53a-40f6-9c90-1a0063bcabca
-- Match score: 5/10
-- Why this fits: Moderate keyword match (Python scorer, Gemini unavailable). Signals: partial keyword match on title.
+*No undated roles found.*
 
 <!-- JOBS_END -->
 
