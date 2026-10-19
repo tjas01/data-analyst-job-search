@@ -1,20 +1,4 @@
 {
-  "216ee489becf": {
-    "title": "Data Analyst \u2013 SQL / Databricks",
-    "company": "Unknown",
-    "url": "https://jobicy.com/jobs/153978-data-analyst-sql-databricks",
-    "date_seen": "2026-09-23T18:43:16.567229+00:00",
-    "score": 6,
-    "dated": true
-  },
-  "d9438a987f1b": {
-    "title": "Senior Data Analyst",
-    "company": "Unknown",
-    "url": "https://jobicy.com/jobs/142571-senior-data-analyst-3",
-    "date_seen": "2026-09-24T18:44:04.450258+00:00",
-    "score": 8,
-    "dated": false
-  },
   "0b4a322a30a3": {
     "title": "Senior Fullstack Data Analyst (Commercial Analytics)",
     "company": "Unknown",
@@ -180,6 +164,22 @@
     "company": "Unknown",
     "url": "https://jobicy.com/jobs/155537-analytics-engineer-4",
     "date_seen": "2026-10-17T17:38:06.597627+00:00",
+    "score": 5,
+    "dated": true
+  },
+  "e12990dd5b58": {
+    "title": "Business Intelligence Analyst (Contractor)",
+    "company": "Unknown",
+    "url": "https://jobicy.com/jobs/155822-business-intelligence-analyst-contractor",
+    "date_seen": "2026-10-19T20:17:20.133162+00:00",
+    "score": 6,
+    "dated": true
+  },
+  "601ffcd21231": {
+    "title": "Senior Revenue Operations Analyst",
+    "company": "Unknown",
+    "url": "https://jobicy.com/jobs/153550-senior-revenue-operations-analyst",
+    "date_seen": "2026-10-19T20:17:20.133162+00:00",
     "score": 5,
     "dated": true
   }
