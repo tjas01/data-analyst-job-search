@@ -10,19 +10,25 @@ Built for: Business Analyst, Business Systems Analyst, Data Analyst, SAP/ERP Ana
 
 <!-- JOBS_START -->
 
-*Last updated: 2026-10-23 11:46 AM PST*
+*Last updated: 2026-10-25 10:56 AM PST*
 
 ### Postings from the last 24 hours
 
-*No new dated postings in the last 24 hours.*
+**1. Customer Success Operations Analyst | Unknown | Remote | Unknown**
+- Posted: Sun, 25 Oc
+- Link: https://jobicy.com/jobs/156880-customer-success-operations-analyst-4
+- Match score: 7/10
+- Why this fits: Strong keyword match (Python scorer, Gemini unavailable). Signals: SAP/ERP mentioned in description.
+
+**2. Senior Data Analyst – Marketing | Unknown | Remote | Unknown**
+- Posted: Sun, 25 Oc
+- Link: https://jobicy.com/jobs/156941-senior-data-analyst-marketing
+- Match score: 6/10
+- Why this fits: Moderate keyword match (Python scorer, Gemini unavailable). Signals: title matches target analyst roles.
 
 ### Open roles (no timestamp available)
 
-**1. Senior Data Analyst, Enterprise | 1Password | Remote | FullTime**
-- Posted: Unknown
-- Link: https://jobs.ashbyhq.com/1password/577f47a1-f80d-4d5b-8212-9e38e749c004
-- Match score: 6/10
-- Why this fits: Moderate keyword match (Python scorer, Gemini unavailable). Signals: title aligns with BA/ERP target roles.
+*No undated roles found.*
 
 <!-- JOBS_END -->
 
