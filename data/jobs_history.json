@@ -1,68 +1,4 @@
 {
-  "bcc7e387d3fd": {
-    "title": "Business Intelligence Lead, Performance Marketing",
-    "company": "Unknown",
-    "url": "https://jobicy.com/jobs/154232-business-intelligence-lead-performance-marketing-3",
-    "date_seen": "2026-09-30T19:42:57.376974+00:00",
-    "score": 6,
-    "dated": false
-  },
-  "8a02ba9233b8": {
-    "title": "Senior Data Analyst, GTM",
-    "company": "Unknown",
-    "url": "https://jobicy.com/jobs/152315-senior-data-analyst-gtm",
-    "date_seen": "2026-09-30T19:42:57.376974+00:00",
-    "score": 6,
-    "dated": false
-  },
-  "4d442d87f906": {
-    "title": "Senior Data Analyst (Fully Remote)",
-    "company": "Unknown",
-    "url": "https://jobicy.com/jobs/154331-senior-data-analyst-fully-remote",
-    "date_seen": "2026-10-01T19:57:23.578633+00:00",
-    "score": 6,
-    "dated": false
-  },
-  "71914860f67c": {
-    "title": "GTM Business Systems Analyst \u2013 Post Sales",
-    "company": "Ramp",
-    "url": "https://jobs.ashbyhq.com/ramp/196e4e25-c452-430d-8b2f-36a40f88a2ae",
-    "date_seen": "2026-10-01T19:57:23.578633+00:00",
-    "score": 8,
-    "dated": false
-  },
-  "adec678d96bd": {
-    "title": "Costpoint Cognos Report Writer and General Ledger Business Analyst",
-    "company": "Unknown",
-    "url": "https://jobicy.com/jobs/149012-costpoint-cognos-report-writer-and-general-ledger-business-analyst",
-    "date_seen": "2026-10-02T19:37:43.018810+00:00",
-    "score": 2,
-    "dated": false
-  },
-  "710197a6ad4e": {
-    "title": "Staff Data Analyst, Marketing",
-    "company": "1Password",
-    "url": "https://jobs.ashbyhq.com/1password/45393747-1ed7-4eb9-bcda-4c74fe5e9824",
-    "date_seen": "2026-10-02T19:37:43.018810+00:00",
-    "score": 6,
-    "dated": false
-  },
-  "59e066e4693f": {
-    "title": "Analytics Engineering Advocate - Europe",
-    "company": "Lightdash",
-    "url": "https://jobs.ashbyhq.com/lightdash/309706bc-1081-48b6-89dc-f769bbe17e6d",
-    "date_seen": "2026-10-02T19:37:43.018810+00:00",
-    "score": 5,
-    "dated": false
-  },
-  "e09c52e141be": {
-    "title": "Revenue Operations Analyst (CX)",
-    "company": "Unknown",
-    "url": "https://jobicy.com/jobs/154457-revenue-operations-analyst-cx",
-    "date_seen": "2026-10-03T18:23:59.680774+00:00",
-    "score": 5,
-    "dated": true
-  },
   "f926e30125f1": {
     "title": "Analytics Engineer II, Full Stack (Revenue Analytics)",
     "company": "Unknown",
@@ -213,6 +149,14 @@
     "url": "https://jobicy.com/jobs/156880-customer-success-operations-analyst-4",
     "date_seen": "2026-10-25T17:56:39.823030+00:00",
     "score": 7,
+    "dated": true
+  },
+  "5aea82b7fd0d": {
+    "title": "Staff Analytics Engineer",
+    "company": "Unknown",
+    "url": "https://jobicy.com/jobs/157554-staff-analytics-engineer-2",
+    "date_seen": "2026-10-28T19:57:35.879329+00:00",
+    "score": 5,
     "dated": true
   }
 }
