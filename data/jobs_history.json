@@ -1,28 +1,4 @@
 {
-  "f926e30125f1": {
-    "title": "Analytics Engineer II, Full Stack (Revenue Analytics)",
-    "company": "Unknown",
-    "url": "https://jobicy.com/jobs/154478-analytics-engineer-ii-full-stack-revenue-analytics",
-    "date_seen": "2026-10-04T18:27:27.527683+00:00",
-    "score": 5,
-    "dated": true
-  },
-  "caaf382a9f46": {
-    "title": "GTM Senior Business Systems Analyst \u2013 Channel Sales",
-    "company": "Ramp",
-    "url": "https://jobs.ashbyhq.com/ramp/2d2c336c-16e7-4f27-b0cd-5bb6055cdf21",
-    "date_seen": "2026-10-04T18:27:27.527683+00:00",
-    "score": 8,
-    "dated": false
-  },
-  "c44c63bdbe4b": {
-    "title": "GTM Senior Business Systems Analyst, Pre-Sales",
-    "company": "Ramp",
-    "url": "https://jobs.ashbyhq.com/ramp/aa433e44-f095-484b-a46a-a330583d84b0",
-    "date_seen": "2026-10-04T18:27:27.527683+00:00",
-    "score": 8,
-    "dated": false
-  },
   "20ec92a996ea": {
     "title": "Senior Data Analyst",
     "company": "Unknown",
@@ -158,5 +134,53 @@
     "date_seen": "2026-10-28T19:57:35.879329+00:00",
     "score": 5,
     "dated": true
+  },
+  "b9e995b9e573": {
+    "title": "Business Intelligence Data Architect",
+    "company": "Unknown",
+    "url": "https://jobicy.com/jobs/157725-business-intelligence-data-architect",
+    "date_seen": "2026-10-29T19:56:28.577048+00:00",
+    "score": 6,
+    "dated": false
+  },
+  "afabf1299a2c": {
+    "title": "Senior Data Analyst (MedTech)",
+    "company": "Unknown",
+    "url": "https://jobicy.com/jobs/157762-senior-data-analyst-medtech",
+    "date_seen": "2026-10-29T19:56:28.577048+00:00",
+    "score": 6,
+    "dated": false
+  },
+  "fede7469e36b": {
+    "title": "Senior Data Analyst",
+    "company": "Unknown",
+    "url": "https://jobicy.com/jobs/157759-senior-data-analyst-3",
+    "date_seen": "2026-10-29T19:56:28.577048+00:00",
+    "score": 6,
+    "dated": false
+  },
+  "0096017324a0": {
+    "title": "Marketing Operations Analyst ",
+    "company": "D2l",
+    "url": "https://www.d2l.com/careers/jobs/?job_id=8333965&gh_jid=8333965",
+    "date_seen": "2026-10-29T19:56:28.577048+00:00",
+    "score": 5,
+    "dated": false
+  },
+  "710197a6ad4e": {
+    "title": "Staff Data Analyst, Marketing",
+    "company": "1Password",
+    "url": "https://jobs.ashbyhq.com/1password/45393747-1ed7-4eb9-bcda-4c74fe5e9824",
+    "date_seen": "2026-10-29T19:56:28.577048+00:00",
+    "score": 6,
+    "dated": false
+  },
+  "59e066e4693f": {
+    "title": "Analytics Engineering Advocate - Europe",
+    "company": "Lightdash",
+    "url": "https://jobs.ashbyhq.com/lightdash/309706bc-1081-48b6-89dc-f769bbe17e6d",
+    "date_seen": "2026-10-29T19:56:28.577048+00:00",
+    "score": 5,
+    "dated": false
   }
 }
