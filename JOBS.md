@@ -1,4 +1,4 @@
-# Job Matches — Last updated: 2026-10-29 12:56 PM PST
+# Job Matches — Last updated: 2026-10-30 12:46 PM PST
 
 ## Postings from the last 24 hours
 
@@ -6,32 +6,14 @@
 
 ## Open roles (no timestamp available)
 
-**1. Business Intelligence Data Architect | Unknown | Remote | Unknown**
-- Posted: Thu, 29 Oc
-- Link: https://jobicy.com/jobs/157725-business-intelligence-data-architect
-- Match score: 6/10
-- Why this fits: Moderate keyword match (Python scorer, Gemini unavailable). Signals: partial keyword match on title.
-
-**2. Senior Data Analyst (MedTech) | Unknown | Remote | Unknown**
-- Posted: Thu, 29 Oc
-- Link: https://jobicy.com/jobs/157762-senior-data-analyst-medtech
-- Match score: 6/10
-- Why this fits: Moderate keyword match (Python scorer, Gemini unavailable). Signals: title matches target analyst roles.
-
-**3. Senior Data Analyst | Unknown | Remote | Unknown**
-- Posted: Thu, 29 Oc
-- Link: https://jobicy.com/jobs/157759-senior-data-analyst-3
-- Match score: 6/10
-- Why this fits: Moderate keyword match (Python scorer, Gemini unavailable). Signals: title matches target analyst roles.
-
-**4. Staff Data Analyst, Marketing | 1Password | Remote | FullTime**
+**1. GTM Senior Business Systems Analyst, Marketing & Pre-Sales | Ramp | Remote | FullTime**
 - Posted: Unknown
-- Link: https://jobs.ashbyhq.com/1password/45393747-1ed7-4eb9-bcda-4c74fe5e9824
-- Match score: 6/10
-- Why this fits: Moderate keyword match (Python scorer, Gemini unavailable). Signals: title matches target analyst roles.
+- Link: https://jobs.ashbyhq.com/ramp/aa433e44-f095-484b-a46a-a330583d84b0
+- Match score: 8/10
+- Why this fits: Strong keyword match (Python scorer, Gemini unavailable). Signals: title is a top-priority BSA role.
 
-**5. Marketing Operations Analyst  | D2l | Canada | Unknown**
+**2. Finance Systems Analyst - Integrations and Automation | 1Password | Remote | FullTime**
 - Posted: Unknown
-- Link: https://www.d2l.com/careers/jobs/?job_id=8333965&gh_jid=8333965
-- Match score: 5/10
-- Why this fits: Moderate keyword match (Python scorer, Gemini unavailable). Signals: partial keyword match on title.
+- Link: https://jobs.ashbyhq.com/1password/9d3f7564-490b-4107-b315-ece3146760a8
+- Match score: 4/10
+- Why this fits: Weak keyword match (Python scorer, Gemini unavailable). Signals: partial keyword match on title.
