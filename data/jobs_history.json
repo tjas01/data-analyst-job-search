@@ -1,20 +1,4 @@
 {
-  "20ec92a996ea": {
-    "title": "Senior Data Analyst",
-    "company": "Unknown",
-    "url": "https://jobicy.com/jobs/152859-senior-data-analyst",
-    "date_seen": "2026-10-10T19:02:56.849781+00:00",
-    "score": 6,
-    "dated": true
-  },
-  "efaaee9c7ea9": {
-    "title": "Twilio: Billing Operations Analyst 1",
-    "company": "Unknown",
-    "url": "https://weworkremotely.com/remote-jobs/twilio-billing-operations-analyst-1",
-    "date_seen": "2026-10-11T19:16:22.402264+00:00",
-    "score": 5,
-    "dated": true
-  },
   "15726620fb76": {
     "title": "Business Intelligence Lead, Performance Marketing",
     "company": "Unknown",
@@ -221,6 +205,14 @@
     "url": "https://jobicy.com/jobs/152315-senior-data-analyst-gtm",
     "date_seen": "2026-11-03T20:41:39.732086+00:00",
     "score": 6,
+    "dated": false
+  },
+  "2664d88858ae": {
+    "title": "Analytics Engineering Advocate - Europe",
+    "company": "Lightdash",
+    "url": "https://jobs.ashbyhq.com/Lightdash/309706bc-1081-48b6-89dc-f769bbe17e6d",
+    "date_seen": "2026-11-06T20:40:28.430974+00:00",
+    "score": 5,
     "dated": false
   }
 }
