@@ -10,19 +10,25 @@ Built for: Business Analyst, Business Systems Analyst, Data Analyst, SAP/ERP Ana
 
 <!-- JOBS_START -->
 
-*Last updated: 2026-11-06 01:40 PM PST*
+*Last updated: 2026-11-08 12:15 PM PST*
 
 ### Postings from the last 24 hours
 
-*No new dated postings in the last 24 hours.*
+**1. Senior Data Analyst (BigQuery): Health & Wellness (3-month project) | Unknown | Remote | Unknown**
+- Posted: Sun, 08 No
+- Link: https://jobicy.com/jobs/159718-senior-data-analyst-bigquery-health-wellness-3-month-project
+- Match score: 6/10
+- Why this fits: Moderate keyword match (Python scorer, Gemini unavailable). Signals: title matches target analyst roles.
+
+**2. Staff Data Analyst, Marketing | Unknown | Remote | Unknown**
+- Posted: Sun, 08 No
+- Link: https://jobicy.com/jobs/159746-staff-data-analyst-marketing
+- Match score: 6/10
+- Why this fits: Moderate keyword match (Python scorer, Gemini unavailable). Signals: title matches target analyst roles.
 
 ### Open roles (no timestamp available)
 
-**1. Analytics Engineering Advocate - Europe | Lightdash | Remote | FullTime**
-- Posted: Unknown
-- Link: https://jobs.ashbyhq.com/Lightdash/309706bc-1081-48b6-89dc-f769bbe17e6d
-- Match score: 5/10
-- Why this fits: Moderate keyword match (Python scorer, Gemini unavailable). Signals: partial keyword match on title.
+*No undated roles found.*
 
 <!-- JOBS_END -->
 
