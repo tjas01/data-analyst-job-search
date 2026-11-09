@@ -1,20 +1,4 @@
 {
-  "5b1c0704981c": {
-    "title": "Director Analytics Engineering",
-    "company": "1Password",
-    "url": "https://jobs.ashbyhq.com/1password/32eb8288-f53a-40f6-9c90-1a0063bcabca",
-    "date_seen": "2026-10-15T18:45:07.266857+00:00",
-    "score": 5,
-    "dated": false
-  },
-  "d7d8c164294e": {
-    "title": "Data Analyst, Finance Analytics",
-    "company": "1Password",
-    "url": "https://jobs.ashbyhq.com/1password/ca3d814c-946a-447a-b41a-0257fcf7e2cd",
-    "date_seen": "2026-10-15T18:45:07.266857+00:00",
-    "score": 6,
-    "dated": false
-  },
   "0f7e55a5d3f7": {
     "title": "Sales Business Analyst",
     "company": "Unknown",
@@ -204,6 +188,22 @@
     "company": "Unknown",
     "url": "https://jobicy.com/jobs/159746-staff-data-analyst-marketing",
     "date_seen": "2026-11-08T19:15:16.216699+00:00",
+    "score": 6,
+    "dated": true
+  },
+  "c6b2c0297d5b": {
+    "title": "Analytics Engineering Manager, FinCrime",
+    "company": "Unknown",
+    "url": "https://jobicy.com/jobs/160265-analytics-engineering-manager-fincrime",
+    "date_seen": "2026-11-09T23:37:58.982839+00:00",
+    "score": 5,
+    "dated": true
+  },
+  "a32c2905c419": {
+    "title": "Lead Data Analyst",
+    "company": "Unknown",
+    "url": "https://jobicy.com/jobs/160026-lead-data-analyst",
+    "date_seen": "2026-11-09T23:37:58.982839+00:00",
     "score": 6,
     "dated": true
   }
