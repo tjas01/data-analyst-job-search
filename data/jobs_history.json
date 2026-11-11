@@ -1,20 +1,4 @@
 {
-  "0f7e55a5d3f7": {
-    "title": "Sales Business Analyst",
-    "company": "Unknown",
-    "url": "https://jobicy.com/jobs/155434-sales-business-analyst",
-    "date_seen": "2026-10-16T18:29:26.643609+00:00",
-    "score": 6,
-    "dated": true
-  },
-  "d33524dc4bfb": {
-    "title": "Analytics Engineer",
-    "company": "Unknown",
-    "url": "https://jobicy.com/jobs/155537-analytics-engineer-4",
-    "date_seen": "2026-10-17T17:38:06.597627+00:00",
-    "score": 5,
-    "dated": true
-  },
   "e12990dd5b58": {
     "title": "Business Intelligence Analyst (Contractor)",
     "company": "Unknown",
@@ -204,6 +188,14 @@
     "company": "Unknown",
     "url": "https://jobicy.com/jobs/160026-lead-data-analyst",
     "date_seen": "2026-11-09T23:37:58.982839+00:00",
+    "score": 6,
+    "dated": true
+  },
+  "20ec92a996ea": {
+    "title": "Senior Data Analyst",
+    "company": "Unknown",
+    "url": "https://jobicy.com/jobs/152859-senior-data-analyst",
+    "date_seen": "2026-11-11T21:38:19.325541+00:00",
     "score": 6,
     "dated": true
   }
