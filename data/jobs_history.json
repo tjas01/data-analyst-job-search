@@ -1,36 +1,4 @@
 {
-  "e12990dd5b58": {
-    "title": "Business Intelligence Analyst (Contractor)",
-    "company": "Unknown",
-    "url": "https://jobicy.com/jobs/155822-business-intelligence-analyst-contractor",
-    "date_seen": "2026-10-19T20:17:20.133162+00:00",
-    "score": 6,
-    "dated": true
-  },
-  "601ffcd21231": {
-    "title": "Senior Revenue Operations Analyst",
-    "company": "Unknown",
-    "url": "https://jobicy.com/jobs/153550-senior-revenue-operations-analyst",
-    "date_seen": "2026-10-19T20:17:20.133162+00:00",
-    "score": 5,
-    "dated": true
-  },
-  "f167cd3c3d4e": {
-    "title": "Carrot: Business Intelligence Analyst",
-    "company": "Unknown",
-    "url": "https://weworkremotely.com/remote-jobs/carrot-business-intelligence-analyst",
-    "date_seen": "2026-10-20T18:48:26.626202+00:00",
-    "score": 6,
-    "dated": false
-  },
-  "10ba1b548e02": {
-    "title": "Analytics Engineer",
-    "company": "Unknown",
-    "url": "https://jobicy.com/jobs/156010-analytics-engineer-5",
-    "date_seen": "2026-10-20T18:48:26.626202+00:00",
-    "score": 5,
-    "dated": false
-  },
   "05f1351ecabf": {
     "title": "Senior Data Analyst, Enterprise",
     "company": "1Password",
@@ -196,6 +164,14 @@
     "company": "Unknown",
     "url": "https://jobicy.com/jobs/152859-senior-data-analyst",
     "date_seen": "2026-11-11T21:38:19.325541+00:00",
+    "score": 6,
+    "dated": true
+  },
+  "b9024ff55395": {
+    "title": "Business Intelligence Analytics Engineer",
+    "company": "Unknown",
+    "url": "https://jobicy.com/jobs/162465-business-intelligence-analytics-engineer",
+    "date_seen": "2026-11-15T20:01:20.007513+00:00",
     "score": 6,
     "dated": true
   }
