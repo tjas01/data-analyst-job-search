@@ -1,12 +1,4 @@
 {
-  "05f1351ecabf": {
-    "title": "Senior Data Analyst, Enterprise",
-    "company": "1Password",
-    "url": "https://jobs.ashbyhq.com/1password/577f47a1-f80d-4d5b-8212-9e38e749c004",
-    "date_seen": "2026-10-23T18:46:53.767143+00:00",
-    "score": 6,
-    "dated": false
-  },
   "f5b2c464581d": {
     "title": "Senior Data Analyst \u2013 Marketing",
     "company": "Unknown",
@@ -196,6 +188,14 @@
     "company": "Unknown",
     "url": "https://jobicy.com/jobs/156010-analytics-engineer-5",
     "date_seen": "2026-11-16T23:33:40.974001+00:00",
+    "score": 5,
+    "dated": false
+  },
+  "d57b91cfb45f": {
+    "title": "Analytics Engineer (AI) | Martech",
+    "company": "Unknown",
+    "url": "https://jobicy.com/jobs/162992-analytics-engineer-ai-martech",
+    "date_seen": "2026-11-17T22:43:08.901159+00:00",
     "score": 5,
     "dated": false
   }
