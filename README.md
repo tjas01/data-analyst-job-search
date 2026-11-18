@@ -10,7 +10,7 @@ Built for: Business Analyst, Business Systems Analyst, Data Analyst, SAP/ERP Ana
 
 <!-- JOBS_START -->
 
-*Last updated: 2026-11-17 03:43 PM PST*
+*Last updated: 2026-11-18 03:24 PM PST*
 
 ### Postings from the last 24 hours
 
@@ -18,11 +18,11 @@ Built for: Business Analyst, Business Systems Analyst, Data Analyst, SAP/ERP Ana
 
 ### Open roles (no timestamp available)
 
-**1. Analytics Engineer (AI) | Martech | Unknown | Remote | Unknown**
-- Posted: Tue, 17 No
-- Link: https://jobicy.com/jobs/162992-analytics-engineer-ai-martech
-- Match score: 5/10
-- Why this fits: Moderate keyword match (Python scorer, Gemini unavailable). Signals: partial keyword match on title.
+**1. Senior Data Analyst, Enterprise | 1Password | Remote | FullTime**
+- Posted: Unknown
+- Link: https://jobs.ashbyhq.com/1password/577f47a1-f80d-4d5b-8212-9e38e749c004
+- Match score: 6/10
+- Why this fits: Moderate keyword match (Python scorer, Gemini unavailable). Signals: title aligns with BA/ERP target roles.
 
 <!-- JOBS_END -->
 
